@@ -1,4 +1,6 @@
 package com.itsol.recruit.entity;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -45,8 +47,15 @@ public class User{
     @Column(name = "gender")
     String gender;
 
+    @JsonFormat(pattern="dd-MM-yyyy")
     @Column(name = "birth_day")
     Date birthDay;
+
+    @Column(name = "cccd")
+    String cccd;
+
+    @Column(name = "position")
+    String position;
 
     @Column(name = "is_delete")
     @Type(type = "org.hibernate.type.NumericBooleanType")
