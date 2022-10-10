@@ -1,5 +1,5 @@
 package com.itsol.recruit.entity;
-
+import lombok.AllArgsConstructor;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.hibernate.annotations.Type;
