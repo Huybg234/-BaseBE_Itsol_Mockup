@@ -11,4 +11,12 @@ public interface UserService {
     public User findById(Long id);
 
     public User findUserByUserName(String userName);
+
+    public User save(User user);
+
+    int updateUserPassword(String userName,String password);
+
+    int updateUserAvatarName(String avatarName, long id);
+
+//    User updateUserAvatarName();
 }
