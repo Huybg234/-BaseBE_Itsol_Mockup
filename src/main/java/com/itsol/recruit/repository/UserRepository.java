@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 import java.util.Optional;
+
 
 
 @Repository
@@ -33,5 +33,4 @@ public interface UserRepository extends JpaRepository<User, Long>, UserRepositor
 //    @Query("update Users u set u.avatarName =: avatar where u.id=:id")
 //    int updateUserAvatarName(@Param("id") Long id,@Param("avatar") String avatar);
 }
-
 

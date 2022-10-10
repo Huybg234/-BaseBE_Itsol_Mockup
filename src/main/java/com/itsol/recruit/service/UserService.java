@@ -19,4 +19,5 @@ public interface UserService {
     int updateUserAvatarName(String avatarName, long id);
 
 //    User updateUserAvatarName();
+    public List<User> findAll();
 }
