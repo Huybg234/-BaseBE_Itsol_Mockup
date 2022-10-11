@@ -8,4 +8,5 @@ public interface OtpsService {
     public List<OTPS> getAllOtp();
 
     public OTPS save(OTPS otps);
+    public List<OTPS> findAllByUser();
 }
